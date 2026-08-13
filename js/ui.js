@@ -65,6 +65,7 @@
 
       MP.Visualizer.start(this.els.npRing);
       this.renderPlaylistSidebar();
+      this.renderQueueList();
       this.switchView("home");
       this.refreshCurrentView();
       this._checkEmptyState();

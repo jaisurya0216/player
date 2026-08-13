@@ -48,7 +48,7 @@
         values = this._sample(this._dataArr, BARS);
       } else {
         this._idlePhase += 0.02;
-        values = new Array(BARS).fill(0).map((_, i) => 14 + Math.sin(this._idlePhase + i * 0.35) * 8);
+        values = new Array(BARS).fill(0).map((_, i) => 17 + Math.sin(this._idlePhase + i * 0.35) * 10);
       }
 
       for (let i = 0; i < BARS; i++) {
@@ -60,9 +60,9 @@
         const x1 = cx + Math.cos(angle) * r1, y1 = cy + Math.sin(angle) * r1;
         const t = i / BARS;
         ctx.strokeStyle = t < 0.5
-          ? this._mix("#F5A29C", "#7FD3C6", t * 2)
-          : this._mix("#7FD3C6", "#F5A29C", (t - 0.5) * 2);
-        ctx.globalAlpha = playing ? 0.85 : 0.35;
+          ? this._mix("#E4A29C", "#9BC2A0", t * 2)
+          : this._mix("#9BC2A0", "#E4A29C", (t - 0.5) * 2);
+        ctx.globalAlpha = playing ? 0.85 : 0.5;
         ctx.lineWidth = 2.6;
         ctx.lineCap = "round";
         ctx.beginPath();

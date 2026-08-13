@@ -79,8 +79,8 @@
   // used whenever no real artwork is found. Palette stays in the app's
   // own accent family so it never clashes with the UI.
   const GEN_PALETTES = [
-    ["#F5A29C", "#7FD3C6"], ["#F7C9A4", "#F5A29C"], ["#C9B8E8", "#A8D0EA"],
-    ["#7FD3C6", "#A8D0EA"], ["#F0A8C0", "#F7C9A4"], ["#A8D0EA", "#C9B8E8"]
+    ["#E4A29C", "#9BC2A0"], ["#E8C468", "#E4A29C"], ["#C4B5DC", "#A8C8DC"],
+    ["#9BC2A0", "#A8C8DC"], ["#D97E93", "#E8C468"], ["#A8C8DC", "#C4B5DC"]
   ];
   function generatedArt(seed) {
     const h = MP.Store.ids.hashString(seed || "?");
